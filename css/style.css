@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Lilita One', cursive;
+    box-sizing: border-box;
+}
+
+/*header starts here*/
+
+header {
+    position: fixed;
+    background-color: #fff;
+    height: 100px;
+    width: 100vw;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: inset 0 0 5px #000;
+}
+
+header img {
+    height: 3.5rem;
+}
+
+header h1 {
+    font-family: 'Lilita One', cursive;
+    margin: 0;
+    font-size: 2.5rem;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+header .fa {
+    font-size: 2.5rem;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*main content starts here*/
+
+.main {
+    display: flex;
+    height: max-content;
+}
+
+/*left section starts here*/
+
+.left {
+    width: 15vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-wrapper {
+    width: 15vw;
+    position: fixed;
+    top: 180px;
+}
+
+.left button {
+    background-color: transparent;
+    border: none;
+    height: 60px;
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: left;
+    padding-left: 18px;
+    font-family: 'Alegreya Sans', sans-serif;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.left button i {
+    margin-right: 18px;
+}
+
+
+
+/*mid section starts here*/
+
+.mid {
+    width: 65vw;
+    padding-top: 120px;
+}
+
+.searching {
+    text-align: center;
+}
+
+.searching .search-box {
+    font-family: 'Alegreya Sans', sans-serif;
+    width: 400px;
+    padding: 8px;
+}
+
+.searching .search-button {
+    font-family: 'Alegreya Sans', sans-serif;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid black;
+
+}
+
+.card-holder {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    padding-top: 20px;
+}
+
+.card {
+    height: 280px;
+    background-color: #fff;
+}
+
+.pic img {
+    width: 100%;
+}
+
+.card-holder .txt {
+    padding: 0px 10px;
+    font-weight: 700;
+}
+
+.txt h4 {
+    font-family: 'Alegreya Sans', sans-serif;
+    margin: 5px 0px;
+    font-size: 1.05rem;
+}
+
+.txt span {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+/*right section starts here*/
+
+.right {
+    font-family: 'Alegreya Sans', sans-serif;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 170px;
+    overflow: scroll;
+}
+
+.right .card {
+    width: 95%;
+    margin-bottom: 25px;
+}
+
+.right .reco {
+    font-family: 'Alegreya Sans', sans-serif;
+    padding: 12px;
+    width: 18vw;
+    height: 60px;
+    position: fixed;
+    top: 101px;
+    background-color:rgb(255, 255, 255);
+}
+
+.right h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/*hover effects*/
+
+.left button:hover {
+    background-color: #FF0000;
+    color: #fff;
+    text-shadow: 0px 0px 1px #000;
+}
+
+header h1:hover {
+    color: #FF0000;
+    text-shadow: 0px 0px 4px #000;
+}
+
+header i:hover {
+    color: #FF0000;
+    text-shadow: 0px 0px 4px #000;
+}
+
+.search-button:hover {
+    background-color: #FF0000;
+    box-shadow: 0px 0px 4px #000;
+}
+
+.search-box:hover {
+    box-shadow: 0px 0px 4px #000 inset;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 4px #000;
+}
+
+/*scroll bar styling*/
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 100px;
+    background-color: #e5e5e5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF0000;
+}
+
+footer {
+    margin: 0 auto;
+    width: 100vw;
+    font-size: 1rem;
+    text-align: center;
+    clear: both;
+    padding: 60px 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+@media screen and (max-width:959px) {
+
+    .left button {
+        padding-left: 8px;
+        font-size: 1.2rem;
+    }
+
+    .left button i {
+        margin-right: 10px;
+    }
+
+    .card-holder {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 60px;
+    }  
+    
+    .right h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    header {
+        display: none;
+    }
+
+    .left {
+        background-color: #FF0000;
+        position: fixed;
+        top: 0;
+        height: 100px;
+        width: 100vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-wrapper {
+        width: auto;
+        position: inherit;
+        top: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left button {
+        background-color: transparent;
+        margin: 0 15px;
+        width: 120px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .mid {
+        width: 74vw;
+    }
+
+    .right {
+        width: 26vw;
+    }
+
+}
+
+@media screen and (max-width:761px) {
+
+    .left button {
+        width: 60px;
+        font-size: 2rem;
+    }
+
+    .left button span {
+        display: none;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    .txt {
+        font-size: 0.8rem;
+    }
+
+    .txt span {
+        font-size: 0.7rem;
+    }
+
+    .card {
+        height: 240px;
+    }
+
+    .left button {
+        width: 60px;
+        font-size: 1.5rem;
+    }
+
+    .searching .search-box {
+        width: 200px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width:461px) {
+
+    .left button {
+        width: 30px;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .mid {
+        width: 100vw;
+    }
+
+    .card-holder{
+    grid-template-columns:1fr;
+    }
+
+    .card{
+        height: 350px;
+    }
+}   
